@@ -320,9 +320,9 @@ body {
         width: 100% !important;
     }
 
-    .query-container {
+    /* .query-container {
         flex-direction: column;
-    }
+    } */
 
     .general-enquiry-container,
     .support-request-container {
