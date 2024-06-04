@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <div class="contact-form-parent-wrapper">
+    <div class="contact-form-wrapper">
+      <div class="contact-form-heading">
+        Contact Us
+      </div>
+      <div class="name-container-wrapper">
+        <div class="first-name-container">
+          <label>First Name <span class="important-notation"> * </span></label>
+          <input type="text" id="first-name" />
+          <div class="mandatory-text">This field is required</div>
+        </div>
+        <div class="second-name-container">
+          <label>Last Name <span class="important-notation"> * </span></label>
+          <input type="text" id="last-name" />
+          <div class="mandatory-text">This field is required</div>
+        </div>
+      </div>
+      <div class="email-container">
+        <label>Email Address<span class="important-notation"> * </span></label>
+        <input type="text" id="email" />
+        <div class="mandatory-text">This field is required</div>
+        <div class="mail-format">Please enter a valid email address</div>
+      </div>
+      <div class="query-container-wrapper">
+        <label>Query Type<span class="important-notation"> * </span></label>
+        <div class="query-container">
+          <div class="general-enquiry-container">
+            <input type="radio" name="query-type" id="general-enquiry">General Enquiry</input>
+          </div>
+          <div class="support-request-container">
+            <input type="radio" name="query-type" id="support-request">Support Request</input>
+          </div>
+        </div>
+        <div class="mandatory-text">Please select a query type</div>
+      </div>
+      <div class="message-container">
+        <label>Message<span class="important-notation"> * </span></label>
+        <textarea id="message"></textarea>
+        <div class="mandatory-text">This field is required</div>
+      </div>
+
+      <div class="submission-checkbox-wrapper">
+        <div class="submission-checkbox">
+          <input type="checkbox" id="consent" />
+          <div class="submission-text">I consent to being contacted by the team<span class="important-notation"> *
+            </span>
+          </div>
+        </div>
+        <div class="mandatory-text">To submit this form, please consent to being contacted</div>
+      </div>
+      <div class="button-container">
+        <button class="submit-button" id="submit-button">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="toast" id="toast">
+      <div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700;">
+        <img src="./assets/images/tickIcon.svg" / style="width: 15px; height: 15px;">Message Sent!</div>
+      <div style="padding-top: 10px; font-size: 15px; font-weight: 400; ">Thanks for completing the form. We'll be in touch soon!</div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+    Coded by <a href="#">Mohamed Shahid V M</a>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
